@@ -1,0 +1,8 @@
+{
+  "name": "Remix International Business Board Game_1",
+  "description": "A real-time multiplayer board game based on the classic Indian business game rules.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

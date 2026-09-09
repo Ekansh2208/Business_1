@@ -1,0 +1,26 @@
+{
+  "entities": {
+    "Game": {
+      "title": "Game",
+      "description": "Represents an active or finished board game match",
+      "type": "object",
+      "properties": {
+        "status": { "type": "string" },
+        "players": { "type": "array" },
+        "properties": { "type": "object" },
+        "logs": { "type": "array" },
+        "turnIndex": { "type": "number" },
+        "partyHouseBank": { "type": "number" },
+        "diceRoll": { "type": "array" },
+        "currentAction": { "type": "object" }
+      },
+      "required": ["status", "players", "properties", "logs", "turnIndex", "partyHouseBank"]
+    }
+  },
+  "firestore": {
+    "/games/{gameId}": {
+      "schema": "Game",
+      "description": "The collection of active games"
+    }
+  }
+}
